@@ -1,0 +1,17 @@
+name: LoupGarou
+
+version: 0.1
+
+author: Val'entin
+
+main: loupgarou.LoupGarou
+
+
+
+commands:
+
+  LoupGarou:
+
+    aliases: lg
+
+    usage: /lg <start|setup|help>
