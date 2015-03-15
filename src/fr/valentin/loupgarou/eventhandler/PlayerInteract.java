@@ -8,6 +8,7 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.Inventory;
@@ -16,7 +17,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import fr.valentin.loupgarou.LoupGarou;
 
-public class PlayerInteract {
+public class PlayerInteract implements Listener {
 	
 	private LoupGarou plugin;
 	public PlayerInteract(LoupGarou plugin) {
@@ -41,7 +42,7 @@ public class PlayerInteract {
 				ItemMeta meta = item.getItemMeta();
 				meta.setDisplayName(p.getName());
 				lore = new ArrayList<String>();
-				lore.add(ChatColor.DARK_PURPLE + "Téléport") ;
+				lore.add(ChatColor.DARK_PURPLE + "Clicker pour vous téléporter") ;
 				meta.setLore(lore) ;
 				item.setItemMeta(meta);
 				inv.addItem(item);
@@ -50,4 +51,5 @@ public class PlayerInteract {
 			pl.openInventory(inv);
 		}
 	}
+	
 }

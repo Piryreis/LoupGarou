@@ -20,7 +20,6 @@ import fr.valentin.loupgarou.LoupGarou;
 public class Items {
 	
 	private LoupGarou plugin;
-	
 	public Items(LoupGarou plugin) {
 		plugin = this.plugin;
 	}
@@ -229,7 +228,7 @@ public class Items {
 		}
 
 		return is;
-
 	}
 
+	
 }

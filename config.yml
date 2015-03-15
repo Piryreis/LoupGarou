@@ -1,0 +1,10 @@
+######################
+## LoupGarou Config ##
+######################
+
+
+# Temps en minutes d'une partie.
+time_of_a_game: 1
+
+# Temps en secondes avant le début d'une partie.
+time_before_the_party: 2

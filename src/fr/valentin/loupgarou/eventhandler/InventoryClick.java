@@ -5,13 +5,14 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 import fr.valentin.loupgarou.LoupGarou;
 
-public class InventoryClick {
+public class InventoryClick implements Listener {
 
 	private LoupGarou plugin;
 	public InventoryClick(LoupGarou plugin) {
